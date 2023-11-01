@@ -1,0 +1,3 @@
+*.env
+*.log
+email-body.html

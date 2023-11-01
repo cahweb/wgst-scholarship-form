@@ -1,0 +1,16 @@
+{
+    "faculty": [
+        {
+            "email": "anne.bubriski@ucf.edu",
+            "name": "Anne Bubriski"
+        },
+        {
+            "email": "leandra@ucf.edu",
+            "name": "Leandra Preston"
+        },
+        {
+            "email": "amy.barnickel@ucf.edu",
+            "name": "Amy Barnickel"
+        }
+    ]
+}

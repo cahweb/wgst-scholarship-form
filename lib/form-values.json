@@ -1,0 +1,64 @@
+{
+    "generalInfo": [
+        {
+            "name": "firstname",
+            "label": "First Name",
+            "type": "text",
+            "required": true
+        },
+        {
+            "name": "lastname",
+            "label": "Last Name",
+            "type": "text",
+            "required": true
+        },
+        {
+            "name": "email",
+            "label": "Email",
+            "type": "email",
+            "required": true
+        },
+        {
+            "name": "pid",
+            "label": "UCF ID",
+            "type": "text",
+            "required": true
+        },
+        {
+            "name": "gpa",
+            "label": "UCF GPA",
+            "type": "number",
+            "required": true,
+            "min": 0.0,
+            "max": 4.0,
+            "step": 0.1
+        },
+        {
+            "name": "classYear",
+            "label": "Class Year",
+            "type": "select",
+            "required": true,
+            "options": [
+                "no-default",
+                "Freshman",
+                "Sophomore",
+                "Junior",
+                "Senior",
+                "Graduate Student"
+            ]
+        }
+    ],
+    "fileInputs": [
+        {
+            "name": "resume",
+            "label": "R&eacute;sum&eacute;",
+            "accept": ".pdf,.docx,.doc,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+            "required": true
+        },
+        {
+            "name": "personalStatement",
+            "label": "Personal Statement",
+            "accept": ".pdf,.docx,.doc,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+        }
+    ]
+}

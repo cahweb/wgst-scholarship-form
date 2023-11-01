@@ -1,0 +1,9 @@
+main {
+    min-height: 45vh;
+}
+
+span.custom-file-control::after {
+    content: attr(data-after) !important;
+    font-size: 0.85rem;
+    overflow-x: hidden;
+}
