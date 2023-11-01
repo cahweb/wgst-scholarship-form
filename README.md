@@ -5,3 +5,5 @@ This form enables students to apply for scholarships being offered through the U
 ## Installation and setup
 
 Clone this repository, copy `.env.example`, fill out the values (including relabeling the `ENV` value to `production`, if appropriate), and rename it to `.env`. That should be all that's required.
+
+**Note:** This assumes that reCAPTCHA and PHPMailer support exists already on the server in question, through the `include_dir` setting in `php.ini`, as well as the custom PHP environment loader, `\CAH\Util\DotEnvLite`.
