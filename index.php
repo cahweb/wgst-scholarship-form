@@ -2,11 +2,13 @@
 namespace CAH\WGST;
 
 // Requires
-require_once "recaptcha.php";
-require_once "class.dot-env-lite.php";
+//require_once "recaptcha.php";
+require_once "class.dot-env.php";
 
 require_once "class.phpmailer.php";
-require_once "class.smtp.php";
+//require_once "class.smtp.php";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
 // Includes
 require_once "includes/wgst-scholarship-functions.php";
@@ -15,7 +17,7 @@ require_once "includes/class.fileInput.php";
 require_once "includes/enum.exception-codes.php";
 
 // Load the environment variables
-$dotEnv = new \CAH\Util\DotEnvLite(__DIR__);
+$dotEnv = new \CAH\Util\DotEnv(__DIR__);
 
 // Make sure we don't spam people with emails during development
 define('IS_DEV', getenv('ENV') != 'production');
@@ -137,7 +139,7 @@ if (isset($_POST['submit'])) {
             }
 
             // Send the confirmation email
-            $mail = new \PHPMailer();
+            $mail = new PHPMailer();
             $mail->IsSMTP();
             $mail->IsHTML(true);
             $mail->SMTPAuth = true;
